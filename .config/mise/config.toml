@@ -1,0 +1,5 @@
+[tools]
+bun = "latest"
+java = "temurin-23.0.2+7"
+node = "latest"
+python = "3.13.3"
