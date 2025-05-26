@@ -167,7 +167,7 @@ alias gs='git status'
 
 eval "$(thefuck --alias)"
 
-eval `keychain --eval --agents ssh id_rsa`
+eval `keychain --eval --quiet id_ed25519`
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
