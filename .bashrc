@@ -162,16 +162,16 @@ source "$OSH"/oh-my-bash.sh
 # alias bashconfig="mate ~/.bashrc"
 
 export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
-alias idea='nohup idea > /dev/null 2>&1 &'
-eval "$(/usr/bin/mise activate bash)"
-
-alias gs='git status'
 
 eval "$(thefuck --alias)"
-
+eval "$(/usr/bin/mise activate bash)"
 eval `keychain --eval --quiet id_ed25519`
 
+# ALIASES
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gs='git status'
+alias idea='nohup idea > /dev/null 2>&1 &'
+alias ls='eza'
 
 # FZF
 eval "$(fzf --bash)"

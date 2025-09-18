@@ -7,7 +7,7 @@ WINIT_UNIX_BACKEND = "wayland"
 XKB_DEFAULT_LAYOUT = "ch"
 
 [window]
-opacity = 0.9
+opacity = 0.6
 blur = true
 
 [font]
