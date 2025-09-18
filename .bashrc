@@ -115,6 +115,7 @@ plugins=(
   sudo
   git
   colored-man-pages
+  tmux-autoattach
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
