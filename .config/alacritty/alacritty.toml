@@ -1,15 +1,1 @@
-[general]
-live_config_reload = true
-
-[env]
-TERM = "alacritty"
-WINIT_UNIX_BACKEND = "wayland"
-XKB_DEFAULT_LAYOUT = "ch"
-
-[window]
-opacity = 0.6
-blur = true
-
-[font]
-size = 10
-
+/home/thesolian/.config/alacritty/alacritty-kde.toml

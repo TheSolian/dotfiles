@@ -161,6 +161,8 @@ source "$OSH"/oh-my-bash.sh
 # Example aliases
 # alias bashconfig="mate ~/.bashrc"
 
+export LC_ALL=en_US.UTF-8
+
 export PATH="$HOME/.local/share/JetBrains/Toolbox/scripts:$PATH"
 
 eval "$(thefuck --alias)"
@@ -172,6 +174,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gs='git status'
 alias idea='nohup idea > /dev/null 2>&1 &'
 alias ls='eza'
+alias firefox='firefox-developer-edition'
 
 # FZF
 eval "$(fzf --bash)"
@@ -185,6 +188,15 @@ export FZF_TMUX_OPTS=" -p90%,70% "
 
 export FZF_CTRL_T_OPTS="--preview 'bat --color=always -n --line-range :500 {}'"
 export FZF_ALT_C_OPTS="--preview 'eza --tree --color=always {} | head -200'"
+
+# ALACRITTY
+if [ "$XDG_CURRENT_DESKTOP" = "Hyprland" ]; then
+	ln -sf ~/.config/alacritty/alacritty-hyprland.toml ~/.config/alacritty/alacritty.toml
+elif [ "$XDG_CURRENT_DESKTOP" = "KDE" ]; then
+	ln -sf ~/.config/alacritty/alacritty-kde.toml ~/.config/alacritty/alacritty.toml
+else
+	alacritty
+fi
 
 # Start SSH agent if not running
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
