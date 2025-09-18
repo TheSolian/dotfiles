@@ -1,0 +1,7 @@
+[user]
+	email = levin.gsell@bluewin.ch
+	name = Levin Gsell
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
